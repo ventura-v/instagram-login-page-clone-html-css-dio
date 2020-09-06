@@ -6,4 +6,4 @@ Click on image below to be redirect to the page.
 
 [Page model](https://www.instagram.com/)
 
-[![](pitch.png)][New tab[(https://ventura-v.github.io/instagram-landing-page-dio-html-css/)]]
+[![][New tab](pitch.png)](https://ventura-v.github.io/instagram-landing-page-dio-html-css/)
