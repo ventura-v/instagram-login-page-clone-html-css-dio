@@ -2,8 +2,8 @@
 
 Clone of Instagram Landing Page Website, from the Digital Innovation One project, using HTML and CSS.
 
-Click on gif below to be redirect to the page.
+To check the model page: [Instagram](https://www.instagram.com/)
 
-[Page model](https://www.instagram.com/)
+To check the cloned page, click on gif below:
 
 [![](img/pitch.gif)](https://ventura-v.github.io/instagram-landing-page-dio-html-css/)
