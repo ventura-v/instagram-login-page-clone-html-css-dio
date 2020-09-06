@@ -1,0 +1,257 @@
+:root {
+  --main-color: #0095f6;
+  --text-color: #262626;
+  --background-color: rgb(243, 243, 243);
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+body{
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--background-color);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+section{
+  margin: 0 20px;
+}
+
+a{
+  box-sizing: content-box;
+}
+
+p{
+  color: var(--text-color);
+}
+
+label{
+  display: flex;
+  flex: 1 0 0;
+  position: relative;
+  height: 36px;
+}
+
+input{
+  background: rgba(250, 250, 250,1);
+  padding: 9px 0 7px 8px;
+  border: 1px solid rgba(219,219,219,1);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border-radius: 2px;
+  width: 100%;
+}
+
+#boxes{
+  display: flex;
+  align-items: center;
+  margin: 64px auto 0;
+  padding-bottom: 64px;
+}
+
+.display-phone{
+  position: relative;
+  overflow: visible;
+}
+
+.pictures{
+  position: absolute;
+  top: -513px;
+  left: 98px;
+  opacity: 0;
+  animation-name: animation;
+  animation-duration: 25s;
+  animation-iteration-count: infinite;
+  z-index: 1;
+}
+
+.data{
+  margin: 12px 0 0;
+  justify-content: center;
+  top: .45em;
+}
+
+.instagram-logo-box{
+  height: 51px;
+  width: 175px;
+  margin: 22px 86.5px 12px;
+}
+
+.instagram-logo{
+  height: 51px;
+}
+
+#login-post{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 24px;
+}
+
+.login{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.login, .signup{
+  background-color: #fff;
+  border: 1px solid rgba(var(--b6a,219,219,219),1);
+  margin: 0 0 10px;
+  padding: 10px 0;
+}
+
+.inputs{
+  margin: 0 40px 6px;
+  width: 100%;
+}
+
+#login-button{
+  background-color: var(--main-color);
+  color: #fff;
+  font-weight: bold;
+  padding: 8px;
+  border-radius: 4px;
+  text-align: center;
+  width: 94%;
+  margin: 8px 40px;
+}
+
+#or-box{
+  display: grid;
+  grid-template-columns: 2fr 1fr 2fr;
+  margin: 10px 40px 18px;
+  align-items: stretch;
+  flex-direction: row;
+  width: 100%;
+}
+
+.line{
+  background-color: rgb(219,219,219);
+  height: 1px;
+  position: relative;
+  top: .45em;
+}
+
+#or{
+  text-align: center;
+  font-size: 12px;
+  font-weight: 600;
+  color: rgb(114, 114, 114);
+}
+
+#facebook{
+  text-align: center;
+  width: 76%;
+  margin: 8px 40px;
+}
+
+#facebook a{
+  color: #385185;
+  font-weight: 600;
+}
+
+.facebook-logo{
+  width: 16px;
+  margin-right: 8px;
+}
+
+.forgot-password{
+  color: rgb(0,55,107);
+  text-align: center;
+  font-size: 12px;
+  margin-top: 12px;
+}
+
+.signup p{
+  margin: 15px;
+  text-align: center;
+}
+
+.signup a{
+  color: var(--main-color);
+  font-weight: 600;
+}
+
+.get-download{
+  display: flex;
+  flex-direction: column;
+  height: 102px;
+  width: 350px;
+}
+
+.download a:first-child{
+  margin-right: 8px;
+}
+
+.get-app{
+  margin: 10px 20px;
+  box-sizing: content-box;
+  text-align: center;
+}
+
+.download{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+.apple, .google{
+  height: 40px;
+  width: 136px;
+}
+
+footer{
+  padding: 0 20px;
+}
+
+footer a{
+  color: rgba(0,55,107,1);
+  font-size: 12px;
+  font-weight: 600;
+  margin: 0 16px 7px 0;
+}
+
+.footer{
+  color: rgba(142,142,142,1);
+  font-size: 12px;
+  margin: 20px 0 40px;
+}
+
+@keyframes animation{
+  25%{
+    opacity: 1;
+  }
+
+  50%{
+    opacity: 0;
+  }
+}
+
+.pictures:nth-child(1){
+  animation-delay: 5s;
+}
+.pictures:nth-child(2){
+  animation-delay: 10s;
+}
+.pictures:nth-child(3){
+  animation-delay: 15s;
+}
+.pictures:nth-child(4){
+  animation-delay: 20s;
+}
+.pictures:nth-child(5){
+  animation-delay: 25s;
+}
