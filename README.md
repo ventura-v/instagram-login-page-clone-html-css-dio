@@ -7,5 +7,4 @@ Click on image below to be redirect to the page.
 [Page model](https://www.instagram.com/)
 
 [![](img/pitch.gif)](https://ventura-v.github.io/instagram-landing-page-dio-html-css/)
-
-[go](http://stackoverflow.com){:target="_blank" rel="noopener"}
+<a href="http://www.google.com" target="_blank">Launch Google in a new window</a>
