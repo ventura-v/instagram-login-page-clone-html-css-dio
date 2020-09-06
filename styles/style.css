@@ -235,6 +235,10 @@ footer a{
   top: .1em;
 }
 
+.links, .footer-container{
+  margin-bottom: 20px;
+}
+
 ul{
   text-align: center;
 }
