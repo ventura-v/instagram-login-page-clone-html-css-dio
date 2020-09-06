@@ -214,6 +214,10 @@ input{
 }
 
 footer{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
   padding: 0 20px;
 }
 
@@ -227,7 +231,63 @@ footer a{
 .footer{
   color: rgba(142,142,142,1);
   font-size: 12px;
-  margin: 20px 0 40px;
+  margin: 20px 0;
+  top: .1em;
+}
+
+ul{
+  text-align: center;
+}
+
+li{
+  display: inline-block;
+}
+
+@media(max-width: 1005px){
+  footer{
+    display: block;
+    margin: 20px 0;
+  }
+
+  ul{
+    margin-bottom: 10px;
+  }
+
+  .footer-container{
+    padding-left: 110px;
+  }
+
+}
+
+@media(max-width: 750px){
+  .phones{
+    display: none;
+  }
+
+  .links{
+    margin: 0 auto 10px;
+  }
+
+  footer{
+    max-width: 360px;
+    margin: 0 auto 10px;
+  }
+
+  li{
+    margin: 0 16px 7px 0;
+  }
+
+  .footer-container{
+    text-align: center;
+    padding-left: 0;
+  }
+}
+
+@media(max-width:400px){
+  .download{
+    flex-direction: column;
+    margin: 0 auto;
+  }
 }
 
 @keyframes animation{
