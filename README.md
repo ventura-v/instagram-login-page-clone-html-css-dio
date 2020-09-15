@@ -19,5 +19,4 @@ To check the model page: [Instagram](https://www.instagram.com/)
 
 :small_blue_diamond: CSS3
 
-# Status: 
-Done :heavy_check_mark:
+# Status: #### Done :heavy_check_mark:
