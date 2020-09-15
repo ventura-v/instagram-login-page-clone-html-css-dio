@@ -1,7 +1,9 @@
 :root {
   --main-color: #0095f6;
   --text-color: #262626;
-  --background-color: rgb(243, 243, 243);
+  --background-color: rgb(250, 250, 250);
+  --border-color: 219, 219, 219;
+  --footer-text-color: rgb(00, 55, 107);
 }
 
 *{
@@ -11,59 +13,33 @@
   font-family: sans-serif;
   text-decoration: none;
   font-size: 14px;
+  border: none;
 }
 
 body{
-  width: 100%;
-  min-height: 100vh;
   background-color: var(--background-color);
   display: flex;
   justify-content: center;
   flex-direction: column;
 }
 
-section{
-  margin: 0 20px;
-}
-
-a{
-  box-sizing: content-box;
-}
-
-p{
-  color: var(--text-color);
-}
-
-label{
-  display: flex;
-  flex: 1 0 0;
-  position: relative;
-  height: 36px;
-}
-
-input{
-  background: rgba(250, 250, 250,1);
-  padding: 9px 0 7px 8px;
-  border: 1px solid rgba(219,219,219,1);
-  overflow: hidden;
-  text-overflow: ellipsis;
-  border-radius: 2px;
-  width: 100%;
-}
-
-#boxes{
+#content-container{
   display: flex;
   align-items: center;
   margin: 64px auto 0;
   padding-bottom: 64px;
 }
 
+.phones, 
 .display-phone{
-  position: relative;
-  overflow: visible;
+  margin: 0 20px;
 }
 
-.pictures{
+.display-phone{
+  position: relative;
+}
+
+.picture{
   position: absolute;
   top: -513px;
   left: 98px;
@@ -71,19 +47,32 @@ input{
   animation-name: animation;
   animation-duration: 25s;
   animation-iteration-count: infinite;
-  z-index: 1;
 }
 
-.data{
+.user{
   margin: 12px 0 0;
   justify-content: center;
   top: .45em;
 }
 
+.login-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.login-container, 
+.signup-container{
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgba(var(--border-color),1);
+  margin-bottom: 10px;
+  padding: 10px 0;
+}
+
 .instagram-logo-box{
-  height: 51px;
   width: 175px;
-  margin: 22px 86.5px 12px;
+  margin: 22px 86.5px 0;
 }
 
 .instagram-logo{
@@ -98,68 +87,64 @@ input{
   margin-top: 24px;
 }
 
-.login{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.login, .signup{
-  background-color: #fff;
-  border: 1px solid rgba(var(--b6a,219,219,219),1);
-  margin: 0 0 10px;
-  padding: 10px 0;
-}
-
-.inputs{
+.inputs-container{
   margin: 0 40px 6px;
   width: 100%;
 }
 
-#login-button{
-  background-color: var(--main-color);
-  color: #fff;
+.inputs-container input{
+  background: var(--background-color);
+  width: 100%;
+  padding: 9px 0 7px 8px;
+  border: 1px solid rgba(var(--border-color),1);
+  border-radius: 2px;
+  outline: none;
+}
+
+.inputs-container input:focus{
+  border-color: rgb(180, 180, 180);
+}
+
+.login-button{
+  background-color: rgb(178,223,252);
+  color: rgb(255,255,255);
   font-weight: bold;
   padding: 8px;
   border-radius: 4px;
   text-align: center;
   width: 94%;
   margin: 8px 40px;
+  box-sizing: content-box;
 }
 
-#or-box{
+.login-button:hover{
+  background-color: var(--main-color);
+}
+
+.or-container{
   display: grid;
   grid-template-columns: 2fr 1fr 2fr;
   margin: 10px 40px 18px;
-  align-items: stretch;
-  flex-direction: row;
   width: 100%;
 }
 
 .line{
-  background-color: rgb(219,219,219);
+  background-color: rgb(var(--border-color));
   height: 1px;
   position: relative;
   top: .45em;
 }
 
-#or{
+.or{
   text-align: center;
   font-size: 12px;
   font-weight: 600;
   color: rgb(114, 114, 114);
 }
 
-#facebook{
+.facebook-container{
   text-align: center;
-  width: 76%;
   margin: 8px 40px;
-}
-
-#facebook a{
-  color: #385185;
-  font-weight: 600;
 }
 
 .facebook-logo{
@@ -167,53 +152,65 @@ input{
   margin-right: 8px;
 }
 
-.forgot-password{
-  color: rgb(0,55,107);
-  text-align: center;
-  font-size: 12px;
-  margin-top: 12px;
+.facebook-login{
+  color: rgb(56, 81, 133);
+  font-weight: 600;
 }
 
-.signup p{
+.password-forgot{
+  color: var(--footer-text-color);
+  text-align: center;
+  font-size: 12px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.signup-container p, 
+.get-container p{
+  color: var(--text-color);
+}
+
+.signup-container p{
   margin: 15px;
   text-align: center;
 }
 
-.signup a{
+.signup{
   color: var(--main-color);
   font-weight: 600;
 }
 
-.get-download{
+.get-container{
   display: flex;
   flex-direction: column;
   height: 102px;
   width: 350px;
 }
 
-.download a:first-child{
-  margin-right: 8px;
-}
-
-.get-app{
+.get-container p{
   margin: 10px 20px;
   box-sizing: content-box;
   text-align: center;
 }
 
-.download{
+.download-container{
   display: flex;
   flex-direction: row;
   justify-content: center;
   margin: 10px 0;
 }
 
-.apple, .google{
+.download-appstore{
+  margin-right: 8px;
+}
+
+.appstore, 
+.googleplay{
   height: 40px;
   width: 136px;
 }
 
-footer{
+.page-footer{
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -221,77 +218,85 @@ footer{
   padding: 0 20px;
 }
 
-footer a{
-  color: rgba(0,55,107,1);
+.links-container, 
+.footer-span-container{
+  margin-bottom: 20px;
+}
+
+.links-list{
+  text-align: center;
+}
+
+.links-list li{
+  display: inline-block;
+}
+
+.links-list li a{
+  color: var(--footer-text-color);
   font-size: 12px;
   font-weight: 600;
   margin: 0 16px 7px 0;
 }
 
-.footer{
+.footer-span{
   color: rgba(142,142,142,1);
   font-size: 12px;
   margin: 20px 0;
   top: .1em;
 }
 
-.links, .footer-container{
-  margin-bottom: 20px;
-}
-
-ul{
-  text-align: center;
-}
-
-li{
-  display: inline-block;
-}
-
 @media(max-width: 1005px){
-  footer{
+
+  .page-footer{
     display: block;
-    margin: 20px 0;
+    padding-bottom: 10px;
   }
 
-  ul{
+  .links-list{
     margin-bottom: 10px;
-  }
-
-  .footer-container{
-    padding-left: 110px;
+    text-align: left;
   }
 
 }
 
-@media(max-width: 750px){
+@media(max-width: 785px){
+
   .phones{
     display: none;
   }
 
-  .links{
-    margin: 0 auto 10px;
-  }
-
-  footer{
+  .page-footer{
     max-width: 360px;
-    margin: 0 auto 10px;
+    margin: 0 auto;
   }
 
-  li{
-    margin: 0 16px 7px 0;
+  .links-container, 
+  .footer-span-container{
+    margin-bottom: 0;
   }
 
-  .footer-container{
+  .links-list{
+    margin-bottom: 0;
+  }
+
+  .links-list,
+  .footer-span-container{
     text-align: center;
-    padding-left: 0;
   }
+
+  .links-list li{
+    padding-bottom: 10px;
+  }
+
 }
 
 @media(max-width:400px){
-  .download{
+
+  .download-container{
     flex-direction: column;
     margin: 0 auto;
   }
+
 }
 
 @keyframes animation{
@@ -304,18 +309,18 @@ li{
   }
 }
 
-.pictures:nth-child(1){
+.picture:nth-child(1){
   animation-delay: 5s;
 }
-.pictures:nth-child(2){
+.picture:nth-child(2){
   animation-delay: 10s;
 }
-.pictures:nth-child(3){
+.picture:nth-child(3){
   animation-delay: 15s;
 }
-.pictures:nth-child(4){
+.picture:nth-child(4){
   animation-delay: 20s;
 }
-.pictures:nth-child(5){
+.picture:nth-child(5){
   animation-delay: 25s;
 }
