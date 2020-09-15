@@ -1,4 +1,4 @@
-# Instagram Login Page clone
+# Instagram Login page clone
 
 Project from Digital Innovation One living code, using HTML and CSS.
 
