@@ -14,7 +14,7 @@ To check the model page: [Instagram](https://www.instagram.com/)
 
 [![](pitch.gif)](https://ventura-v.github.io/clone-instagram-login-page-html-css-dio/)
 
-# Technologies used:
+# Technologies:
 :small_orange_diamond: HTML5
 
 :small_blue_diamond: CSS3
