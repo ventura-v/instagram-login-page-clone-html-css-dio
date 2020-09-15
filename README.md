@@ -1,9 +1,22 @@
-# instagram-web-page
+# Instagram Login Page clone
 
-Clone of Instagram Landing Page Website, from the Digital Innovation One project, using HTML and CSS.
+Project from Digital Innovation One living code, using HTML and CSS.
+
+The project purpose is recreate the Instagram login page
+
+I implemented some features, like recursivity, slide animations, focus and hover details.
+
+The example pictures in the project were getting from Pexels website.
+
+The project deploy is in Netlify and the final result can be checked [clicking here](https://twitter-login-clone.netlify.app/) or clicking on gif below
 
 To check the model page: [Instagram](https://www.instagram.com/)
 
-To check the cloned page, click on gif below:
-
 [![](img/pitch.gif)](https://ventura-v.github.io/clone-instagram-login-page-html-css-dio/)
+
+# Technologies used:
+:small_orange_diamond: HTML5
+
+:small_blue_diamond: CSS3
+
+# Status: Done :heavy_check_mark:
