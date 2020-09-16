@@ -12,7 +12,7 @@ The project deploy is on Netlify and the final result can be checked [clicking h
 
 To check the model page: [Instagram](https://www.instagram.com/)
 
-[![](pitch.gif)](https://ventura-v.github.io/clone-instagram-login-page-html-css-dio/)
+[![](pitch.gif)](https://instagram-login-clone.netlify.app/)
 
 # Technologies:
 :small_orange_diamond: HTML5
