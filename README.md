@@ -1,6 +1,6 @@
 # Instagram login page clone
 
-Project from Digital Innovation One living code, using HTML and CSS.
+Project from Digital Innovation One living code.
 
 The project purpose is recreate the Instagram login page
 
