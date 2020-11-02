@@ -4,9 +4,9 @@ Project from Digital Innovation One living code.
 
 The project purpose is recreate the Instagram login page
 
-I implemented some features, like recursivity, slide animations, focus and hover details.
+All features and effects were made using only CSS
 
-The example pictures in the project were getting from Pexels website.
+The example pictures in this project were getting from Pexels website
 
 The project deploy is on Netlify and the final result can be checked [clicking here](https://instagram-login-clone.netlify.app/) or clicking on gif below
 
